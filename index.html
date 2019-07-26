@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="main">
+        <h1>Train Schedules</h1>
+
+
+        <div id="wrapper">
+
+
+            <div class="displaydiv">
+
+                <p class="sectionheader">Current Train Schedule</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Train Name</td>
+                            <td>Destination</td>
+                            <td>Frequency (minutes)</td>
+                            <td>Next Arrival</td>
+                            <td>Minutes Away</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <div id="displaytrains"></div>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+            <div class="displaydiv">
+
+                
+                <p class="sectionheader">Current Train Schedule</p>
+                <form action="#">
+                        <label class="formlabel" for="name">Train Name</label>
+                        <input placeholder="Polar Express" id="name" type="text">
+
+                        <label class="formlabel" for="destination">Destination</label>
+                        <input placeholder="North Pole" id="destination" type="text">
+
+                        <label class="formlabel" for="time">First Train Time (Military Time-(hh:mm))</label>
+                        <input placeholder="09:45" id="time" type="text">
+
+                        <label class="formlabel" for="freqeuency">Frequency(minutes)</label>
+                        <input placeholder="15" id="frequency" type="text">
+
+                        <button id="submit">Submit</button>
+                </form>
+
+            </div>
+
+            
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <script src="./assets/train.js"></script>
+
+</body>
+
+</html>
